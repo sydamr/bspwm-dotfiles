@@ -52,7 +52,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-0 = Source Code Pro:style=Semibold:size=9;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=true;0
+font-1 = M+ 1mn:style=bold:pixelsize=9;0
 font-2 = siji:pixelsize=10;1
 font-3 = Font Awesome 5 Free Solid:pixelsize=10;1
 font-4 = Font Awesome 5 Free:pixelsize=10;1
@@ -73,8 +73,8 @@ wm-restack = bspwm
 
 ;override-redirect = true
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
@@ -267,7 +267,7 @@ format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #4bffdc
 label =  %mb_used% 😃
 ;format-underline = #a081db
-format-background = #ba99f6
+format-background = #61b0ef
 format-foreground = #000000
 
 [module/wlan]
@@ -310,7 +310,7 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 date =   %d-%m-%Y% 
 date-alt = %A, %d %B %Y
@@ -318,11 +318,11 @@ date-alt = %A, %d %B %Y
 time =  %H:%M:%S
 time-alt = %H:%M:%S
 
-format-prefix =
-format-prefix-foreground = ${colors.foreground-alt}
+;format-prefix =
+;format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #a081db
-format-background = #8dd4ff
-format-foreground = #1c3e4c
+format-background = #ff6086
+format-foreground = #000000
 
 label =  %date% %time%
 
@@ -448,7 +448,7 @@ base-temperature = 20
 
 ; Threshold temperature to display warning label (in degrees celsius)
 ; Default: 80
-warn-temperature = 60
+;warn-temperature = 60
 
 [module/powermenu]
 type = custom/menu
@@ -496,7 +496,7 @@ margin-bottom = 0
 [module/right1]
 type = custom/text
 content-background = #71ff95
-content-foreground = #ba99f6
+content-foreground = #61b0ef
 content = "%{T3} %{T-}"
 
 [module/right2]
@@ -508,12 +508,12 @@ content = "%{T3} %{T-}"
 [module/right3]
 type = custom/text
 content-background = #f7768e
-content-foreground = #8dd4ff
+content-foreground = #ff6086
 content = "%{T3} %{T-}"
 
 [module/right4]
 type = custom/text
-content-background = #ba99f6
+content-background = #61b0ef
 content-foreground = #7dcfff
 content = "%{T3} %{T-}"
 
@@ -532,7 +532,7 @@ content = "%{T3} %{T-}"
 [module/left2]
 type = custom/text
 content-background = #00000000
-content-foreground = #7dcfff
+content-foreground = #ff6086
 content = "%{T3}%{T-}"
 
 [module/weather]
@@ -561,7 +561,7 @@ format-foreground = #000000
 type = custom/text
 content-background = #c4ff76
 content-foreground = #ff9f6c
-content = "%{T3}%{T-}"
+content = "%{T3} %{T-}"
 
 [module/updates-pacman-aurhelper]
 type = custom/script
