@@ -19,10 +19,8 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # Autostart
-nitrogen --restore
-#feh --bg-scale ~/Wallpaper/20.jpg
+nitrogen --restore &
 picom --config ~/.config/picom.conf & 
 xss-lock --transfer-sleep-lock -- i3lock -c 000000 --nofork &
 exec ~/.config/polybar/launch.sh &
 mpd-notification & 
-#bash ~/asd
