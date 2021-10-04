@@ -1,2 +1,2 @@
-# bspwm-dotfiles
-My Bspwm Configuration
+# Bspwm Configuration
+Just copy the folder to certain locations
